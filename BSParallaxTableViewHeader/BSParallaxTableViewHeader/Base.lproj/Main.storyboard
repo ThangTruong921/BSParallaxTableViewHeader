@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8af-oo-0iE">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Navigation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6c-Z4-nM6">
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.17276492160000001" green="0.5919884151" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="L65-a1-Zxo"/>
+                                    <constraint firstItem="A6c-Z4-nM6" firstAttribute="top" secondItem="8af-oo-0iE" secondAttribute="top" constant="100" id="WPa-G7-4vL"/>
+                                    <constraint firstItem="A6c-Z4-nM6" firstAttribute="centerX" secondItem="8af-oo-0iE" secondAttribute="centerX" id="qWf-4j-20I"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GjC-gc-0m7">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="2F0-37-iCr"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="YeE-8C-Puv"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="GjC-gc-0m7" secondAttribute="trailing" id="1de-LB-Wba"/>
+                            <constraint firstItem="8af-oo-0iE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7lb-rd-vqv"/>
+                            <constraint firstAttribute="trailing" secondItem="8af-oo-0iE" secondAttribute="trailing" id="9AC-Vl-i1g"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GjC-gc-0m7" secondAttribute="bottom" id="Tdh-xX-Q2q"/>
+                            <constraint firstItem="GjC-gc-0m7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fz2-DE-Gq1"/>
+                            <constraint firstItem="GjC-gc-0m7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="200" id="rYR-lu-N3p"/>
+                            <constraint firstItem="8af-oo-0iE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="sHz-xC-d9q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cstNaviTop" destination="sHz-xC-d9q" id="K0Z-0C-Ujr"/>
+                        <outlet property="cstTableTop" destination="rYR-lu-N3p" id="VsZ-Qf-KvC"/>
+                        <outlet property="tableV" destination="GjC-gc-0m7" id="eoT-dR-8IN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
