@@ -1,3 +1,3 @@
 # BSParallaxTableViewHeader
 move header table when scroll table...
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE "Video Title")
+[![IMAGE ALT TEXT](https://www.youtube.com/watch?v=cA8E4KiXI_I)](https://www.youtube.com/watch?v=cA8E4KiXI_I "Header")
